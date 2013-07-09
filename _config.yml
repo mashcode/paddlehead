@@ -1,2 +1,5 @@
-name: Your New Jekyll Site
+name: Paddlehead Boards
 pygments: true
+url: "http://mashcode.github.io/paddlehead"
+baseurl: "/paddlehead"
+permalink: none
