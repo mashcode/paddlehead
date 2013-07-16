@@ -1,5 +1,5 @@
 name: Paddlehead Boards
 pygments: true
 url: "http://mashcode.github.io/paddlehead"
-baseurl: "/paddlehead"
+baseurl: "../"
 permalink: none

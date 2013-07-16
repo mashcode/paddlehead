@@ -69,23 +69,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Common
 /*
 /*****************************************************************************/
-/* line 43, ../../scss/style.scss */
+/* line 48, ../../scss/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 46, ../../scss/style.scss */
+/* line 50, ../../scss/style.scss */
 .container {
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 192, 203, 0.5)), color-stop(64%, rgba(255, 192, 203, 0.5)), color-stop(64%, rgba(255, 192, 203, 0.25)), color-stop(68%, rgba(255, 192, 203, 0.25)), color-stop(68%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.25)), color-stop(104%, rgba(255, 192, 203, 0.25)));
   background-image: -webkit-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
   background-image: -moz-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
   background-image: -o-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
   background-image: linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
-  margin: 0px 10px;
+  margin: 5px 5px;
   min-height: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: gold;
+  text-align: center;
 }
-@media (min-width: 320px) {
-  /* line 46, ../../scss/style.scss */
+@media (min-width: 316px) {
+  /* line 50, ../../scss/style.scss */
   .container {
     background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.5)));
     background-image: -webkit-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 100%);
@@ -95,7 +99,7 @@ html, body {
   }
 }
 @media (min-width: 421px) {
-  /* line 46, ../../scss/style.scss */
+  /* line 50, ../../scss/style.scss */
   .container {
     background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 192, 203, 0.5)), color-stop(64%, rgba(255, 192, 203, 0.5)), color-stop(64%, rgba(255, 192, 203, 0.25)), color-stop(68%, rgba(255, 192, 203, 0.25)), color-stop(68%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.25)), color-stop(104%, rgba(255, 192, 203, 0.25)));
     background-image: -webkit-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
@@ -103,4 +107,87 @@ html, body {
     background-image: -o-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
     background-image: linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
   }
+}
+
+/* Global Reset */
+/* line 61, ../../scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 66, ../../scss/style.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 68, ../../scss/style.scss */
+body {
+  background-color: #FFF;
+  font: 13.34px Helvetica, Arial, sans-serif;
+}
+
+/* line 73, ../../scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 77, ../../scss/style.scss */
+a:active, a:hover, a:visited {
+  color: blue;
+}
+
+/* line 81, ../../scss/style.scss */
+.header .social li a {
+  display: block;
+  overflow: hidden;
+  text-indent: 102%;
+  white-space: nowrap;
+}
+
+/* line 91, ../../scss/style.scss */
+.header .social li {
+  float: left;
+}
+/* line 94, ../../scss/style.scss */
+.header .social li a {
+  margin-right: 15px;
+  background: url('../../images/dev/social-icons-sc54a59db96.png') no-repeat;
+}
+/* line 100, ../../scss/style.scss */
+.header .social li a.twitter {
+  background-position: 0 -84px;
+}
+/* line 104, ../../scss/style.scss */
+.header .social li a.facebook {
+  background-position: 0 0;
+}
+/* line 111, ../../scss/style.scss */
+.header img {
+  height: auto;
+  text-align: center;
+  display: inline-block;
+  clear: both;
+}
+
+/* line 121, ../../scss/style.scss */
+section h1 {
+  display: inline-block;
+  font-size: 36px;
+}
+/* line 124, ../../scss/style.scss */
+section h1.amp {
+  font-size: 30px;
+  vertical-align: top;
+}
+
+/* line 131, ../../scss/style.scss */
+footer {
+  margin: 20px 0;
+  padding: 10px 0;
+  border-top: 2px solid black;
+}
+/* line 135, ../../scss/style.scss */
+footer .contact {
+  font-size: 14px;
 }

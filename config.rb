@@ -35,8 +35,8 @@ sass_options[:debug_info] = false
 
 sass_dir             = "scss"
 css_dir              = (environment == :production ? "css/prod" : "css/dev")
-images_dir           = "img/src"
-generated_images_dir = (environment == :production ? "img/prod" : "img/dev")
+images_dir           = "images"
+generated_images_dir = (environment == :production ? "images/prod" : "images/dev")
 fonts_dir            = "fonts"
 javascripts_dir      = "js"
 relative_assets      = true
