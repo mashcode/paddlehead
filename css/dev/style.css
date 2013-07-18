@@ -64,120 +64,161 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 50, social-icons/*.png */
+.social-icons-sprite, .social-icons-facebook, .social-icons-twitter {
+  background: url('../../images/dev/social-icons-s7086366db8.png') no-repeat;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-icons-facebook {
+  background-position: 0 0;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-icons-twitter {
+  background-position: 0 -37px;
+}
+
+/* line 10, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#container {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: 0px;
+}
+/* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#container #root_footer {
+  height: 0px;
+}
+
+/* line 20, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 0px;
+}
+
 /*****************************************************************************/
 /*
 /* Common
 /*
 /*****************************************************************************/
-/* line 51, ../../scss/style.scss */
+/* line 63, ../../scss/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 53, ../../scss/style.scss */
-.container {
+/* line 69, ../../scss/style.scss */
+#container {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
   margin: 5px 5px;
-  min-height: 100%;
   border: 1px solid black;
   padding: 10px;
-  background-color: yellow;
   text-align: center;
+  background-color: yellow;
 }
 
 /* Global Reset */
-/* line 65, ../../scss/style.scss */
+/* line 79, ../../scss/style.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 70, ../../scss/style.scss */
+/* line 84, ../../scss/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 72, ../../scss/style.scss */
+/* line 86, ../../scss/style.scss */
 body {
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
 }
 
-/* line 77, ../../scss/style.scss */
+/* line 91, ../../scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 81, ../../scss/style.scss */
+/* line 95, ../../scss/style.scss */
 a:active, a:hover, a:visited {
   color: blue;
 }
 
-/* line 85, ../../scss/style.scss */
-.header .social li a {
-  display: block;
-  overflow: hidden;
-  text-indent: 102%;
-  white-space: nowrap;
-}
-
-/* line 96, ../../scss/style.scss */
+/* line 102, ../../scss/style.scss */
 .header .social li {
   float: left;
-}
-/* line 99, ../../scss/style.scss */
-.header .social li a {
-  margin-right: 15px;
-  background: url('../../images/dev/social-icons-sc54a59db96.png') no-repeat;
+  padding-right: 10px;
 }
 /* line 105, ../../scss/style.scss */
-.header .social li a.twitter {
-  background-position: 0 -84px;
+.header .social li a.social-icons-facebook {
+  display: inline-block;
+  height: 37px;
+  width: 37px;
 }
-/* line 109, ../../scss/style.scss */
-.header .social li a.facebook {
-  background-position: 0 0;
+/* line 110, ../../scss/style.scss */
+.header .social li a.social-icons-twitter {
+  display: inline-block;
+  height: 37px;
+  width: 37px;
 }
-/* line 116, ../../scss/style.scss */
-.header img {
+/* line 115, ../../scss/style.scss */
+.header .social li span {
+  display: none;
+}
+/* line 119, ../../scss/style.scss */
+.header .social li:last-child {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0 0px;
+}
+/* line 128, ../../scss/style.scss */
+.header .logo {
   height: auto;
   text-align: center;
   display: inline-block;
   padding-top: 10px;
-  clear: both;
-}
-/* line 124, ../../scss/style.scss */
-.header .logo {
-  clear: both;
 }
 
-/* line 131, ../../scss/style.scss */
+/* line 141, ../../scss/style.scss */
 section h1 {
   display: inline-block;
   font-size: 35px;
 }
-/* line 134, ../../scss/style.scss */
+/* line 144, ../../scss/style.scss */
 section h1.amp {
   font-size: 30px;
   vertical-align: top;
 }
 
-/* line 141, ../../scss/style.scss */
+/* line 151, ../../scss/style.scss */
 nav a {
   font-size: 20px;
 }
 
-/* line 145, ../../scss/style.scss */
-footer {
-  margin: 20px 0;
-  padding: 10px 0;
-  border-top: 2px solid black;
+/* line 155, ../../scss/style.scss */
+#footer {
+  text-align: center;
 }
-/* line 149, ../../scss/style.scss */
-footer .contact {
+/* line 158, ../../scss/style.scss */
+#footer .contact {
   font-size: 14px;
+}
+
+/* line 163, ../../scss/style.scss */
+.clear {
+  overflow: hidden;
+  clear: both;
 }

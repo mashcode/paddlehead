@@ -16,12 +16,24 @@ $legacy-support-for-mozilla: false;
 @import "singularitygs";
 @import "compass/css3";
 @import "compass/utilities";
+@import "compass/layout/sticky-footer";
  
 
 // fonts.google
 
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Press+Start+2P);
 
+// sprites
+@import "social-icons/*.png";
+@include all-social-icons-sprites;
+$sprite-pad: 0px;
+$height: social-icons-sprite-height(facebook);
+$width: social-icons-sprite-width(facebook);
+$height: social-icons-sprite-height(twitter);
+$width: social-icons-sprite-width(twitter);
+
+// stticky footer
+@include sticky-footer(0px, "#container", "#root_footer", "#footer");
 
 // Gridatious
 
@@ -40,7 +52,7 @@ $gutters: .125;
 $rule1: 2px solid black;
 $rule2: 2px solid black;
 
-$social-icons: sprite-map("social-icons/*.png");
+//$social-icons: sprite-map("social-icons/*.png");
 
 /*****************************************************************************/
 /*
@@ -50,15 +62,17 @@ $social-icons: sprite-map("social-icons/*.png");
 
 html, body { height: 100%; }
 
-.container {
+body {
 	//@include background-grid;
+}
+
+#container {
 	@include border-radius(10px);
 	margin: 5px 5px;
-	min-height: 100%;
 	border: 1px solid rgb(0, 0, 0);
 	padding: 10px;
-	background-color: rgb(255, 255, 0);
 	text-align: center;
+	background-color: rgb(255, 255, 0);
 }
 
 /* Global Reset */
@@ -82,47 +96,43 @@ a:active, a:hover, a:visited {
 	color: blue;
 }
 
-%ir {
-	display: block;
-	overflow: hidden;
-	text-indent: 102%;
-	white-space: nowrap;
-}
-
 .header {
 
 	.social {
-		
 		li {
 			float: left;
-
-			a {
-				margin-right: 15px;
-				@extend %ir;
-				background: $social-icons no-repeat;
-				//@include sprite-dimensions($social-icons, twitter_a);
-				
-				&.twitter {
-					background-position: sprite-position($social-icons, twitter_a);
-				}
-
-				&.facebook {
-					background-position: sprite-position($social-icons, facebook_a);
-				}
+			padding-right: 10px;
+			a.social-icons-facebook {
+				display: inline-block;
+				height:$height + $sprite-pad;
+				width:$width + $sprite-pad;			
 			}
-		}		
+			a.social-icons-twitter {
+				display: inline-block;
+				height:$height + $sprite-pad;
+				width:$width + $sprite-pad;			
+			}
+			span {
+				display: none;
+			}
+		}
+		li:last-child {
+			float: right;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 5px 0 0px;
+			
+		}
 	}
-
-	img {
+	
+	.logo {
 		height: auto;
 		text-align: center;
 		display: inline-block;
 		padding-top: 10px;
-		clear: both;
 	}
-	
-	.logo {
-		clear: both;
+
+	.logo img {
 	}
 	
 }
@@ -142,11 +152,16 @@ nav a {
 	font-size: 20px;	
 }
 
-footer {
-	margin: 20px 0;
-	padding: 10px 0;
-	border-top: $rule2;
+#footer {
+	text-align: center;
+	//border-top: $rule2;
 	.contact {
 		font-size: 14px;
 	}
+}
+
+.clear {
+	@include clearfix;
+	clear: both;
+	
 }
