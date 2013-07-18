@@ -16,8 +16,7 @@ $legacy-support-for-mozilla: false;
 @import "singularitygs";
 @import "compass/css3";
 @import "compass/utilities";
-@import "compass/layout/sticky-footer";
- 
+@import "compass/layout/sticky-footer"; 
 
 // fonts.google
 
@@ -53,6 +52,8 @@ $rule1: 2px solid black;
 $rule2: 2px solid black;
 
 //$social-icons: sprite-map("social-icons/*.png");
+
+@import "_mixin.scss";
 
 /*****************************************************************************/
 /*
@@ -129,7 +130,6 @@ a:active, a:hover, a:visited {
 		height: auto;
 		text-align: center;
 		display: inline-block;
-		padding-top: 10px;
 	}
 
 	.logo img {
@@ -152,11 +152,44 @@ nav a {
 	font-size: 20px;	
 }
 
+.arrow_box {
+	position: relative;
+	background: #ff3300;
+}
+.arrow_box:after {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 51, 0, 0);
+	border-top-color: #ff3300;
+	border-width: 20px;
+	left: 50%;
+	margin-left: -20px;
+}
+
+.map-bar {
+	width: 275px;
+	margin: 5px 0 20px;
+	padding: 8px 0;
+}
+
+.here {
+	color: white;
+	font-size: 20px;
+}
+
 #footer {
 	text-align: center;
 	//border-top: $rule2;
 	.contact {
-		font-size: 14px;
+		font-size: 10px;
 	}
 }
 
@@ -165,3 +198,4 @@ nav a {
 	clear: both;
 	
 }
+
