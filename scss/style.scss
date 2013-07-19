@@ -73,7 +73,7 @@ body {
 	border: 1px solid rgb(0, 0, 0);
 	padding: 10px;
 	text-align: center;
-	background-color: rgb(255, 255, 0);
+	background-color: rgb(255, 255,70);
 }
 
 /* Global Reset */
@@ -94,7 +94,7 @@ a {
 }
 
 a:active, a:hover, a:visited {
-	color: blue;
+	color: #446aa8;
 }
 
 .header {
@@ -180,9 +180,16 @@ nav a {
 	padding: 8px 0;
 }
 
-.here {
-	color: white;
+.directions {
+	color: rgb(255, 255,70);
 	font-size: 20px;
+	letter-spacing: 1px;
+	a:hover {
+		color: #fff!important;
+	}
+	a:visited {
+		color: rgb(255, 255,70);
+	}
 }
 
 #footer {
