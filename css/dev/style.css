@@ -126,7 +126,7 @@ html, body {
   border: 1px solid black;
   padding: 10px;
   text-align: center;
-  background-color: #ffff46;
+  background-color: lightblue;
 }
 
 /* Global Reset */
@@ -243,17 +243,17 @@ nav a {
 
 /* line 183, ../../scss/style.scss */
 .directions {
-  color: #ffff46;
+  color: #fff;
   font-size: 20px;
   letter-spacing: 1px;
 }
 /* line 187, ../../scss/style.scss */
 .directions a:hover {
-  color: white !important;
+  color: black !important;
 }
 /* line 190, ../../scss/style.scss */
 .directions a:visited {
-  color: #ffff46;
+  color: #fff;
 }
 
 /* line 195, ../../scss/style.scss */
