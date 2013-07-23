@@ -115,6 +115,35 @@ html, body {
   height: 100%;
 }
 
+/* line 66, ../../scss/style.scss */
+body {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 192, 203, 0.5)), color-stop(64%, rgba(255, 192, 203, 0.5)), color-stop(64%, rgba(255, 192, 203, 0.25)), color-stop(68%, rgba(255, 192, 203, 0.25)), color-stop(68%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.25)), color-stop(104%, rgba(255, 192, 203, 0.25)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
+  background-image: -moz-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
+  background-image: -o-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
+  background-image: linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
+}
+@media (min-width: 300px) {
+  /* line 66, ../../scss/style.scss */
+  body {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.5)));
+    background-image: -webkit-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 100%);
+    background-image: -moz-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 100%);
+    background-image: -o-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 100%);
+    background-image: linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 100%);
+  }
+}
+@media (min-width: 421px) {
+  /* line 66, ../../scss/style.scss */
+  body {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 192, 203, 0.5)), color-stop(64%, rgba(255, 192, 203, 0.5)), color-stop(64%, rgba(255, 192, 203, 0.25)), color-stop(68%, rgba(255, 192, 203, 0.25)), color-stop(68%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.5)), color-stop(100%, rgba(255, 192, 203, 0.25)), color-stop(104%, rgba(255, 192, 203, 0.25)));
+    background-image: -webkit-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
+    background-image: -moz-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
+    background-image: -o-linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
+    background-image: linear-gradient(left, rgba(255, 192, 203, 0.5), rgba(255, 192, 203, 0.5) 64%, rgba(255, 192, 203, 0.25) 64%, rgba(255, 192, 203, 0.25) 68%, rgba(255, 192, 203, 0.5) 68%, rgba(255, 192, 203, 0.5) 100%, rgba(255, 192, 203, 0.25) 100%, rgba(255, 192, 203, 0.25) 104%);
+  }
+}
+
 /* line 70, ../../scss/style.scss */
 #container {
   -webkit-border-radius: 10px;

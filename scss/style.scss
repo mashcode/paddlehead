@@ -64,7 +64,7 @@ $rule2: 2px solid black;
 html, body { height: 100%; }
 
 body {
-	//@include background-grid;
+	@include background-grid;
 }
 
 #container {
